@@ -1,78 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>NIGERIAN POLICE SECONDARY SCHOOLS </title>
-</head>
-
-
-<body class="bg">
-    <div class="main">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Umar Ibrahim ">
+	  <meta name="keywords" content="Faruktech">
+  	<meta name="author" content="Brad Traversy">
+    <title>Faruktech| Welcome</title>
     
-   <div class="body"><h4>NIGERIAN POLICE SECONDARY SCHOOLS </h4></div>
-    <div class="container">
-        <ul>
-            <li>Police Secondary School, Akure, Ondo State.</li>
-            <li>Police Secondary School, Calabar.</li>
-            <li>Police Secondary School, Minna, Niger state.</li>
-            <li>Police Boy's Secondary School, Mani, Katsina.</li>
-            <li>Police Comprehensive Secondary school, Port Harcourt </li>
-            <li>Police Girl's Secondary School, Shanono, Kano</li>
-            <li>Police Secondary School, Ukana, Akwa Ibom State. </li>
-            <li>Police Secondary School, Isu-Nwangele, Imo State.</li>
-            <li>Police Secondary School </li>
-            <li>Police Secondary School, Gusau, Zamfara State.</li>
-            <li>Police Secondary School, Igbo-Ora, Oyo State.</li>
-            <li>Police Secondary School, Karau-Karau, Kaduna State.</li>
-            <li>Police Secondary School, Tun-Kagoro, Kaduna State.</li>
-            <li>Police Secondary School, Bida, Niger State.</li>
-            <li>Police Secondary School, Lafia, Nassarawa.</li>
-            <li>Police Secondary School, FCT, Abuja.</li>
-           <li>Police Secondary School, Obeaku-Ndoki, Abia State.</li>
-           <li>Police Secondary School, Ballah, Kwara State.</li>
-           <li>Police Secondary School, Daura, Katsina State.</li>
-           <li>Police Basic Secondary School, Ilorin.</li>
-            
-        </ul>
-    </div>
-    </div>
+    <link rel="icon" href="fb.jpg">
     <style>
-       .p{
-           background: tomato;
-           Padding:20px;
-           Border-radius:20px;
-           Text-align:center;
-           Margin:10px;
-       }
-       .container{
-           border:2px solid black;
-           Border-radius:20px;
-           width:340px;
-           height:710px;
-           font-family: serif;
-           color:white;
-           Background:black;
-      }
-      
-    .body{
-         background:black;
-         color:yellow;
-         Text-align:center;
-         Margin:15px;
-         Border-radius:5px;
-         }
-        .bg{
-            Background:cyan;
-        }
- 
-         
-    }
+        body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+/* Global */
+.container{
+  width:auto;
+  margin:auto;
+  overflow:hidden;
+  color:red;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:20px;
+  background:#e8491d;
+  border:0;
+  padding-left: 10px;
+  padding-right:10px;
+  color:#ffffff;
+  letter-spacing:9px;
+  Text-align:center;
+  
+}
+
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* Header **/
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{u
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  min-height:400px;
+  background:url('./fb.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align:center;
+  color:#ffffff;
+}
+
+#showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+/* Newsletter */
+#newsletter{
+  padding:15px;
+  color:#ffffff;
+  background:#35424a
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+/* Boxes */
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:2px;
+}
+
+#boxes .box img{
+  width:100px;
+}
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+}
 
     </style>
-    <div class="p">
-    &copy Alhaji Pharouq King
-    </div>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Welcome </span> Umar </h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Refresh</a></li>
+          </ul>
+          
+          
+        </nav>
+      </div>
+    </header>
 
-</html>
+    <section id="showcase">
+      <div class="container">
+        <a href="hack.html"><p style="color:white;">View post</p></a>
+  </div>
+    </section>
+    <section id="newsletter">
+      <div class="container">
+        <h1>Reach us on Facebook by clicking on the "Yes" button</h1>
+        <div class="button_1"><a href="https://www.facebook.com/alhajifaruk001">Yes</a></div>
+     
+      </div>
+    </section>
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          
+          <p style="color:black;font-family:serif;">Domin karin bayanin dangane da abinda yashafi ethical hacking, ganin abinda matarka takeyi da wayanta  batareda ta saniba, yadda xaka rufe wayarka tawani waya, yadda zaka kara karfin network din wayarka, yadda zakayi unlocking wayarka, yadda zaka hana kowa yakiraka koda wayarka tana a kunne, yadda zakayi chat koda kasa wayarka a flight mode... Dasauransu cikin farshi mai sauki</p><h4 style="color:blue; font-family:monaco;"> Sai kunememu ta wa innan shafukan</h4><ol></o> <li><a href="tel:+2348037177814"> Phone call</a></li>
+          <li><a href="https://wa.me/+2348037177814">WhatsApp </a></li>
+          <li><a href="mailto:ibrahimumarktc@gmail.com? subject=Hello!">Email</a></li></ol>
+          
+          </p>
+        </div>
+        <div class="box">
+          
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Faruktech, Copyright &copy; 2024 </p>
+    </footer>
+    </body>
+    </html>
+    
